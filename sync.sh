@@ -10,7 +10,7 @@ HUB_DIR="$HOME/agent-hub"
 # Check if repo exists
 if [ ! -d "$HUB_DIR/.git" ]; then
     echo "Cloning agent-hub..."
-    git clone https://github.com/jforsyth32/agent-hub.git "$HUB_DIR"
+    git clone https://github.com/kampakilla007/agent-hub.git "$HUB_DIR"
 fi
 
 cd "$HUB_DIR"

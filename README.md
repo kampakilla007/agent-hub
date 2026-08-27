@@ -14,7 +14,7 @@ Each machine should clone this repo and pull before starting work:
 
 ```bash
 # First time setup
-git clone https://github.com/YOUR_USERNAME/agent-hub.git ~/agent-hub
+git clone https://github.com/kampakilla007/agent-hub.git ~/agent-hub
 
 # Before each session
 cd ~/agent-hub && git pull
