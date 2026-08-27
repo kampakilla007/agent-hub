@@ -19,6 +19,14 @@ cd "$HUB_DIR"
 echo "Pulling latest changes..."
 git pull origin main 2>/dev/null || git pull origin master 2>/dev/null || echo "No remote changes"
 
+# Install opencode plugin if it exists
+if [ -f "$HUB_DIR/plugins/agent-hub-sync.js" ]; then
+    PLUGIN_DIR="$HOME/.config/opencode/plugins"
+    mkdir -p "$PLUGIN_DIR"
+    cp "$HUB_DIR/plugins/agent-hub-sync.js" "$PLUGIN_DIR/"
+    echo "Plugin installed: agent-hub-sync.js"
+fi
+
 # Show status
 echo ""
 echo "Agent Hub Status:"
