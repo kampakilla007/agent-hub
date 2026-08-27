@@ -8,22 +8,27 @@ This repo keeps all your agents (opencode instances) in sync across machines.
 - `FREE-MODELS.md` — Current free OpenRouter models
 - `MCP-SETUP.md` — MCP server installation guide
 - `CONTAINER-PROJECT.md` — Blender container design status
+- `plugins/agent-hub-sync.js` — Auto-sync plugin for opencode
 
-## How to Use
-Each machine should clone this repo and pull before starting work:
+## Quick Setup
 
+### First Time (per machine)
 ```bash
-# First time setup
 git clone https://github.com/kampakilla007/agent-hub.git ~/agent-hub
+cd ~/agent-hub && ./sync.sh
+```
 
-# Before each session
-cd ~/agent-hub && git pull
+### Auto-Sync Plugin
+The `agent-hub-sync.js` plugin is installed automatically by `sync.sh`. It:
+- **Pulls** latest changes when opencode starts
+- **Pushes** changes when you finish a session
 
-# After making changes
-cd ~/agent-hub
-git add -A
-git commit -m "update: description of change"
-git push
+No manual git commands needed after initial setup.
+
+### Manual Sync (if needed)
+```bash
+cd ~/agent-hub && git pull    # Get latest
+cd ~/agent-hub && ./sync.sh   # Push your changes
 ```
 
 ## Sensitive Data
