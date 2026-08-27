@@ -1,0 +1,16 @@
+# Sensitive files - never commit these
+*.key
+*.pem
+*.env
+.env.*
+credentials.*
+*.enc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
