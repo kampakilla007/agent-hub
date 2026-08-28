@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="draw.io">
+  <diagram name="Network Topology" id="network-topology">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Title -->
+        <mxCell id="title" value="JSF/3D3SIGNS Network Topology" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a1a1a;" vertex="1" parent="1">
+          <mxGeometry x="350" y="30" width="400" height="40" as="geometry"/>
+        </mxCell>
+        
+        <!-- Tailscale Cloud -->
+        <mxCell id="cloud" value="Tailscale Network&#xa;100.x.x.x" style="shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="80" width="200" height="100" as="geometry"/>
+        </mxCell>
+        
+        <!-- VPS Server -->
+        <mxCell id="vps" value="VPS (Hostinger)&#xa;89.117.23.163&#xa;100.104.79.55&#xa;&#xa;• OmniRoute Gateway&#xa;• OpenCode Server&#xa;• 428 Models Synced" style="shape=mxgraph.cisco.routers.router;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="375" y="220" width="150" height="120" as="geometry"/>
+        </mxCell>
+        
+        <!-- MacBook -->
+        <mxCell id="macbook" value="MacBook Pro&#xa;100.104.160.43&#xa;&#xa;• Blender MCP&#xa;• Fusion360 MCP&#xa;• Network Diagram MCP&#xa;• Draw.io MCP" style="shape=mxgraph.cisco.computers_and_peripherals.laptop;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="100" y="350" width="150" height="120" as="geometry"/>
+        </mxCell>
+        
+        <!-- Alienware -->
+        <mxCell id="alienware" value="Alienware (LPT-AW1)&#xa;100.84.22.73&#xa;&#xa;• Visio MCP&#xa;• Fusion360 MCP&#xa;• Blender MCP" style="shape=mxgraph.cisco.computers_and_peripherals.laptop;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="375" y="350" width="150" height="120" as="geometry"/>
+        </mxCell>
+        
+        <!-- Lenovo -->
+        <mxCell id="lenovo" value="Lenovo G Laptop&#xa;100.112.80.5&#xa;&#xa;• Development&#xa;• Agent Hub Sync" style="shape=mxgraph.cisco.computers_and_peripherals.laptop;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="650" y="350" width="150" height="120" as="geometry"/>
+        </mxCell>
+        
+        <!-- Connections -->
+        <mxCell id="conn1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#6c8ebf;strokeWidth=2;" edge="1" source="cloud" target="vps" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="conn2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#82b366;strokeWidth=2;" edge="1" source="cloud" target="macbook" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="conn3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#82b366;strokeWidth=2;" edge="1" source="cloud" target="alienware" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="conn4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#82b366;strokeWidth=2;" edge="1" source="cloud" target="lenovo" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="50" y="520" width="200" height="120" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend_title" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="530" width="100" height="20" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend_server" value="" style="shape=mxgraph.cisco.routers.router;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="70" y="560" width="30" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_server_text" value="Server/Gateway" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="110" y="560" width="120" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend_workstation" value="" style="shape=mxgraph.cisco.computers_and_peripherals.laptop;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="70" y="595" width="30" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_workstation_text" value="Workstation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="110" y="595" width="120" height="25" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="legend_cloud" value="" style="shape=cloud;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="70" y="630" width="30" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_cloud_text" value="Tailscale VPN" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="110" y="630" width="120" height="25" as="geometry"/>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
