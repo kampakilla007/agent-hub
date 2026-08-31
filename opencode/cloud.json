@@ -4,7 +4,7 @@
   "provider": {
     "vps-gateway": {
       "name": "VPS Gateway (OmniRoute)",
-      "type": "openai",
+      "npm": "@ai-sdk/openai-compatible",
       "baseURL": "http://100.104.79.55:20128/v1",
       "apiKey": "omniroute",
       "models": {
