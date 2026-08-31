@@ -19,6 +19,16 @@ ssh -i ~/.ssh/vps_key root@89.117.23.163
 ssh root@89.117.23.163
 ```
 
+## Model Access (all devices)
+- All models go through the **VPS OmniRoute gateway**: base URL
+  `http://100.104.79.55:20128/v1` (Tailscale only — start Tailscale first).
+- Shared provider config lives in `opencode/cloud.json`; `sync.sh` installs it
+  on a device's first run. Merge it manually if a device already has a config.
+- The gateway mirrors the full OpenRouter catalog. Keep the `:free` variants
+  and `auto/*` aliases for everyday use; add named models to `cloud.json` as needed.
+- Never put the actual OmniRoute/OpenRouter API key in this repo — use the
+  placeholder and let each gateway hold the real key.
+
 ## Project Status
 - **Bitcloudit.com:** Live, SSL + Cloudflare active
 - **CPUVets.com:** Built, needs hosting

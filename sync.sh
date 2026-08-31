@@ -27,6 +27,23 @@ if [ -f "$HUB_DIR/plugins/agent-hub-sync.js" ]; then
     echo "Plugin installed: agent-hub-sync.js"
 fi
 
+# Install shared opencode config template on first-run only.
+# Never overwrite an existing config so per-device edits are preserved.
+if [ -f "$HUB_DIR/opencode/cloud.json" ]; then
+    OPENCODE_DIR="$HOME/.config/opencode"
+    CONFIG_FILE="$OPENCODE_DIR/opencode.jsonc"
+    mkdir -p "$OPENCODE_DIR"
+    if [ ! -f "$CONFIG_FILE" ]; then
+        cp "$HUB_DIR/opencode/cloud.json" "$CONFIG_FILE"
+        echo "Installed shared config: $CONFIG_FILE"
+        echo "  -> Contains the vps-gateway (OmniRoute) provider with free models."
+        echo "  -> Start Tailscale first: the gateway is reached over the VPN (100.104.79.55)."
+    else
+        echo "Existing config found at $CONFIG_FILE - not overwriting it."
+        echo "  (If you want the shared vps-gateway provider, merge opencode/cloud.json manually.)"
+    fi
+fi
+
 # Show status
 echo ""
 echo "Agent Hub Status:"
