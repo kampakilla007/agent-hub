@@ -20,10 +20,10 @@
         "auto/best-vision": {
           "name": "Auto / Best Vision"
         },
-        "nvidia/nemotron-3-ultra-550b-a55b:free": {
+        "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free": {
           "name": "Nemotron 3 Ultra 550B :free"
         },
-        "nvidia/nemotron-3-super-120b-a12b:free": {
+        "openrouter/nvidia/nemotron-3-super-120b-a12b:free": {
           "name": "Nemotron 3 Super 120B :free"
         }
       }

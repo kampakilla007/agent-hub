@@ -7,7 +7,8 @@
 ## Infrastructure Overview
 - **VPS:** 89.117.23.163 (Tailscale: 100.104.79.55)
 - **OmniRoute Gateway:** http://100.104.79.55:20128 (password: see VPS-BRIEFING.md)
-- **Default Model:** vps-gateway/nvidia/nemotron-3-ultra-550b-a55b:free
+- **Default Model:** vps-gateway/openrouter/nvidia/nemotron-3-ultra-550b-a55b:free
+  (tip: raw OpenRouter IDs carry the `openrouter/` prefix on the gateway)
 - **Free Models Only:** Never use paid models
 
 ## SSH Access
